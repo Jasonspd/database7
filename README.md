@@ -1,3 +1,5 @@
+Database role group for week 7 of fac4
+
 # Elevator-Mechanic
 
 There shouldn't be much here that you haven't seen before. There is a simple [HTTP node server](https://nodejs.org/api/http.html).
@@ -23,5 +25,3 @@ We have also introduced a model file for managing your data, which is currently 
 
 (If you are not familiar with [Make](http://en.wikipedia.org/wiki/Make_(software)), you might want to read Mike Bostock's article, *[Why Use Make](http://bost.ocks.org/mike/make/)*).
 # database7
-Database role group for week 7 of fac4
-
