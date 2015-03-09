@@ -4,6 +4,10 @@ Database role group for week 7 of fac4
 -------------------
 
 Started by installing MongoDB - http://docs.mongodb.org/manual/installation/
+Useful command line MongoDB commands:
+```use mydb``` - creates a database with name "mydb" and move into it
+```show collections``` - displays the collections within the current database
+```db.mycollection.find()``` - searches collection for documents. Search parameters are key:value pairs that have been defined by your schema
 
 Install application library such as Mongoose - http://mongoosejs.com/index.html
 There are others available such as Monk (more lightweight but less features), mongojs etc
@@ -22,4 +26,12 @@ These are the basic steps we carried out to display example data on a local serv
 - Read dummy data from database
 - Display dummy data
 
-If you are running the database locally make sure to have it running to be able to extract data from it!
+
+If you are running the database locally make sure to have it running simultaneously as your server to be able to extract data from it!
+
+In you would like to run this code:
+- Clone repo
+- npm install node modules
+- run mongo
+- node model.js
+
