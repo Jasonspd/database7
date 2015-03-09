@@ -1,27 +1,25 @@
 # database7
 Database role group for week 7 of fac4
+
 -------------------
-# Elevator-Mechanic
 
-There shouldn't be much here that you haven't seen before. There is a simple [HTTP node server](https://nodejs.org/api/http.html).
+Started by installing MongoDB - http://docs.mongodb.org/manual/installation/
 
-The handler has been separated from the creation of the server. As your applications grow, separating your project into logical parts is essential.
+Install application library such as Mongoose - http://mongoosejs.com/index.html
+There are others available such as Monk (more lightweight but less features), mongojs etc
 
-Keeping the handlers separate also allows us to test it in isolation. This is important because we are not interested in Node HTTP's ability to trigger request events but whether or not the logic within the handler works as expected.
+MongoDB uses collections to organise data. These are comparative with tables in relational databases.
+Inside collections are documents, and these form the equivalent to fields and rows of a table and store all of the information.
 
-We are using [shot](https://www.npmjs.com/package/shot) to inject requests to the handler. This means we do not have to start the server or make real HTTP requests through the network stack. Instead, we inject mock requests directly to the handler and receive mock responses that we can then test. This saves us A LOT of time (real HTTP requests are slow).
+These are the basic steps we carried out to display example data on a local server:
 
-We have also introduced a model file for managing your data, which is currently empty. 
+- Connect to database
+- Define schema
+- Create collection/model
+- Create dummy data
+- Save to database
+- Create simple server
+- Read dummy data from database
+- Display dummy data
 
-### Tools
-* We are writing acceptance tests using Mocha and Shot.
-* We are using node's core Assert module for assertions.
-* We are writing HTTP servers using node.
-
-### Commands
-
-* Install dependencies with ``` npm install ```
-* Start the server with ``` make s ``` or ```node server.js```
-* Run the tests with ``` make t ``` or ``` npm test ```
-
-(If you are not familiar with [Make](http://en.wikipedia.org/wiki/Make_(software)), you might want to read Mike Bostock's article, *[Why Use Make](http://bost.ocks.org/mike/make/)*).
+If you are running the database locally make sure to have it running to be able to extract data from it!
