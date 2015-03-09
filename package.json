@@ -10,7 +10,8 @@
     "shot": "^1.4.2"
   },
   "devDependencies": {
-    "mocha": "^2.2.0"
+    "mocha": "^2.2.0",
+    "mongoose": "^3.8.24"
   },
   "scripts": {
     "test": "mocha",
